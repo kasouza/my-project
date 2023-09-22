@@ -1,5 +1,6 @@
 {
     "name": "kasouza/craftsman",
+    "description": "A set of utilities to manage your project, aka poor man's artisan",
     "require": {
         "php": "^8.0"
     },
