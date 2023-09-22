@@ -1,0 +1,23 @@
+{
+    "name": "kasouza/craftsman",
+    "require": {
+        "php": "^8.0"
+    },
+    "scripts": {
+      "build": "@php vendor/bin/phar-composer build"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/app/"
+        }, 
+        "files": [
+            "src/app/config.php",
+            "src/app/helpers.php"
+        ]
+    },
+    "bin": [ "src/index.php" ],
+    "require-dev": {
+        "clue/phar-composer": "^1.4"
+    }
+}
