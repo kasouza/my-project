@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_page_simple_banners",
+  "info": {
+    "displayName": "simple-banner"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    }
+  }
+}

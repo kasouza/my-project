@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_user_reviews",
+  "info": {
+    "displayName": "reviews"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reviews": {
+      "displayName": "review",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.review"
+    }
+  }
+}

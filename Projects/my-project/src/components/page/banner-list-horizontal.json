@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_page_banner_list_horizontals",
+  "info": {
+    "displayName": "banner-list-horizontal"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "displayName": "list-item",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.list-item"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.button"
+    }
+  }
+}
