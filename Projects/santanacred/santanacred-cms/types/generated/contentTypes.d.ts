@@ -381,6 +381,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     secao5: Attribute.Component<'home-page.secao5'> & Attribute.Required;
     secao6: Attribute.Component<'home-page.secao6'> & Attribute.Required;
     pixels: Attribute.Text;
+    banner: Attribute.Component<'home-page.banner'> & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

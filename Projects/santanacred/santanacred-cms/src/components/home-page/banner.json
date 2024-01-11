@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_banners",
+  "info": {
+    "displayName": "banner"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    }
+  }
+}

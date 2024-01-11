@@ -1,5 +1,16 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface HomePageBanner extends Schema.Component {
+  collectionName: 'components_home_page_banners';
+  info: {
+    displayName: 'banner';
+  };
+  attributes: {
+    titulo: Attribute.String;
+    subtitulo: Attribute.String;
+  };
+}
+
 export interface HomePageCabecalho extends Schema.Component {
   collectionName: 'components_home_page_cabecalhos';
   info: {
@@ -142,6 +153,7 @@ export interface PageCardComImagem extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'home-page.banner': HomePageBanner;
       'home-page.cabecalho': HomePageCabecalho;
       'home-page.card-servico': HomePageCardServico;
       'home-page.link': HomePageLink;
