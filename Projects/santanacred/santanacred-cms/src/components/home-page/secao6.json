@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_home_page_secao6s",
+  "info": {
+    "displayName": "secao6"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "parceiros": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

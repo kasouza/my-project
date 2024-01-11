@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_secao5_cards",
+  "info": {
+    "displayName": "secao5_card"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "blocks"
+    }
+  }
+}

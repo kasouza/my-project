@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cabecalho": {
+      "displayName": "cabecalho",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.cabecalho",
+      "required": true
+    },
+    "secao1": {
+      "displayName": "secao1",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.secao1",
+      "required": true
+    },
+    "secao2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.secao2",
+      "required": true
+    },
+    "secao4": {
+      "displayName": "secao_4",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.secao-4",
+      "required": true
+    },
+    "secao5": {
+      "displayName": "secao5",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.secao5",
+      "required": true
+    },
+    "secao6": {
+      "displayName": "secao6",
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.secao6",
+      "required": true
+    },
+    "pixels": {
+      "type": "text"
+    }
+  }
+}

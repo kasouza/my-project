@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_page_card_com_imagems",
+  "info": {
+    "displayName": "card_com_imagem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "blocks"
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_page_secao_4s",
+  "info": {
+    "displayName": "secao_4"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "displayName": "card_com_imagem",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.card-com-imagem",
+      "required": true
+    }
+  }
+}

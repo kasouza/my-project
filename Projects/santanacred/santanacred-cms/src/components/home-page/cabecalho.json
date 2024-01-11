@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_page_cabecalhos",
+  "info": {
+    "displayName": "cabecalho"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "links": {
+      "displayName": "link",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.link"
+    }
+  }
+}

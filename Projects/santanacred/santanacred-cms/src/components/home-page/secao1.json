@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_page_secao1s",
+  "info": {
+    "displayName": "secao1",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "texto_esquerda": {
+      "type": "blocks"
+    },
+    "texto_direita": {
+      "type": "blocks"
+    }
+  }
+}

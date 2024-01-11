@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_page_secao2s",
+  "info": {
+    "displayName": "secao2",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "imagem_centro": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.card-servico",
+      "required": true,
+      "max": 4,
+      "min": 4
+    }
+  }
+}

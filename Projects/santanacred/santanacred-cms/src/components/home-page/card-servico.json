@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_page_card_servicos",
+  "info": {
+    "displayName": "section_3_card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "blocks"
+    }
+  }
+}

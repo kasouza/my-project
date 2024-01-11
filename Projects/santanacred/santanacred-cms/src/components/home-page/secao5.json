@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_home_page_secao5s",
+  "info": {
+    "displayName": "secao5"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo_1": {
+      "type": "string"
+    },
+    "subtitulo_2": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "blocks"
+    },
+    "cards": {
+      "displayName": "secao5_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.secao5-card",
+      "min": 3,
+      "max": 3,
+      "required": true
+    }
+  }
+}
