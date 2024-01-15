@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_saquefgts_lp_avaliacaos",
+  "info": {
+    "displayName": "avaliacao"
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "texto": {
+      "type": "blocks",
+      "required": true
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

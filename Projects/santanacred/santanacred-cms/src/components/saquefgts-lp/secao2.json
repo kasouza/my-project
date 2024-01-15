@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_saquefgts_lp_secao2s",
+  "info": {
+    "displayName": "secao2"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "cards": {
+      "displayName": "secao2_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "saquefgts-lp.secao2-card",
+      "required": true
+    }
+  }
+}

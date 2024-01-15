@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_saquefgts_lp_secao6s",
+  "info": {
+    "displayName": "secao6"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "texto": {
+      "type": "blocks",
+      "required": true
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

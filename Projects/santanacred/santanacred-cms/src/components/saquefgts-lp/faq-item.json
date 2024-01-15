@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_saquefgts_lp_faq_items",
+  "info": {
+    "displayName": "faq_item"
+  },
+  "options": {},
+  "attributes": {
+    "pergunta": {
+      "type": "string",
+      "required": true
+    },
+    "resposta": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

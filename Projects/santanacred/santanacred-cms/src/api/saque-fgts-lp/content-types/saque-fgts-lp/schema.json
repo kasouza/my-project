@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saque_fgts_lps",
+  "info": {
+    "singularName": "saque-fgts-lp",
+    "pluralName": "saque-fgts-lps",
+    "displayName": "Saque FGTS LP",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cabecalho": {
+      "displayName": "header",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.header",
+      "required": true
+    },
+    "pixels": {
+      "type": "text",
+      "required": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "secao1": {
+      "displayName": "secao1",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao1",
+      "required": true
+    },
+    "secao2": {
+      "displayName": "secao2",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao2",
+      "required": true
+    },
+    "secao3": {
+      "displayName": "secao3",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao3",
+      "required": true
+    },
+    "secao4": {
+      "displayName": "secao4",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao4",
+      "required": true
+    },
+    "secao5": {
+      "displayName": "secao5",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao5",
+      "required": true
+    },
+    "secao6": {
+      "displayName": "secao6",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao6",
+      "required": true
+    },
+    "secao7": {
+      "displayName": "secao7",
+      "type": "component",
+      "repeatable": false,
+      "component": "saquefgts-lp.secao7",
+      "required": true
+    },
+    "numero_telefone": {
+      "type": "string",
+      "required": true
+    },
+    "numero_whatsapp": {
+      "type": "string",
+      "required": true
+    },
+    "link_whatsapp": {
+      "type": "string",
+      "required": true
+    },
+    "texto_rodape": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

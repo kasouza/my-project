@@ -392,6 +392,50 @@ export interface ApiHomeHome extends Schema.SingleType {
   };
 }
 
+export interface ApiSaqueFgtsLpSaqueFgtsLp extends Schema.CollectionType {
+  collectionName: 'saque_fgts_lps';
+  info: {
+    singularName: 'saque-fgts-lp';
+    pluralName: 'saque-fgts-lps';
+    displayName: 'Saque FGTS LP';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cabecalho: Attribute.Component<'saquefgts-lp.header'> & Attribute.Required;
+    pixels: Attribute.Text;
+    slug: Attribute.String & Attribute.Required & Attribute.Unique;
+    secao1: Attribute.Component<'saquefgts-lp.secao1'> & Attribute.Required;
+    secao2: Attribute.Component<'saquefgts-lp.secao2'> & Attribute.Required;
+    secao3: Attribute.Component<'saquefgts-lp.secao3'> & Attribute.Required;
+    secao4: Attribute.Component<'saquefgts-lp.secao4'> & Attribute.Required;
+    secao5: Attribute.Component<'saquefgts-lp.secao5'> & Attribute.Required;
+    secao6: Attribute.Component<'saquefgts-lp.secao6'> & Attribute.Required;
+    secao7: Attribute.Component<'saquefgts-lp.secao7'> & Attribute.Required;
+    numero_telefone: Attribute.String & Attribute.Required;
+    numero_whatsapp: Attribute.String & Attribute.Required;
+    link_whatsapp: Attribute.String & Attribute.Required;
+    texto_rodape: Attribute.Text & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::saque-fgts-lp.saque-fgts-lp',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::saque-fgts-lp.saque-fgts-lp',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -809,6 +853,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::home.home': ApiHomeHome;
+      'api::saque-fgts-lp.saque-fgts-lp': ApiSaqueFgtsLpSaqueFgtsLp;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

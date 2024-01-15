@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_saquefgts_lp_secao2_cards",
+  "info": {
+    "displayName": "secao2_card"
+  },
+  "options": {},
+  "attributes": {
+    "icone": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "texto": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

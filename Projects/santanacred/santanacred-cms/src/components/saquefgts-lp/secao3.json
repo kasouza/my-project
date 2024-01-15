@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_saquefgts_lp_secao3s",
+  "info": {
+    "displayName": "secao3"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "parceiros": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

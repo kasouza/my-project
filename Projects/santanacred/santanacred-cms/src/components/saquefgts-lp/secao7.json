@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_saquefgts_lp_secao7s",
+  "info": {
+    "displayName": "secao7"
+  },
+  "options": {},
+  "attributes": {
+    "avaliacoes": {
+      "displayName": "avaliacao",
+      "type": "component",
+      "repeatable": true,
+      "component": "saquefgts-lp.avaliacao",
+      "required": true
+    }
+  }
+}

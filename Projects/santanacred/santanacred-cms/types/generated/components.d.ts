@@ -150,6 +150,137 @@ export interface PageCardComImagem extends Schema.Component {
   };
 }
 
+export interface SaquefgtsLpAvaliacao extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_avaliacaos';
+  info: {
+    displayName: 'avaliacao';
+  };
+  attributes: {
+    nome: Attribute.String & Attribute.Required;
+    texto: Attribute.Blocks & Attribute.Required;
+    imagem: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpFaqItem extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_faq_items';
+  info: {
+    displayName: 'faq_item';
+  };
+  attributes: {
+    pergunta: Attribute.String & Attribute.Required;
+    resposta: Attribute.Blocks & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpHeader extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_headers';
+  info: {
+    displayName: 'header';
+  };
+  attributes: {
+    logo: Attribute.Media;
+    titulo: Attribute.String & Attribute.Required;
+    subtitulo: Attribute.String & Attribute.Required;
+    imagem_direita: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao1 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao1s';
+  info: {
+    displayName: 'secao1';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    texto: Attribute.Blocks & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao2Card extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao2_cards';
+  info: {
+    displayName: 'secao2_card';
+  };
+  attributes: {
+    icone: Attribute.Media & Attribute.Required;
+    titulo: Attribute.String & Attribute.Required;
+    texto: Attribute.Blocks & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao2 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao2s';
+  info: {
+    displayName: 'secao2';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    cards: Attribute.Component<'saquefgts-lp.secao2-card', true> &
+      Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao3 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao3s';
+  info: {
+    displayName: 'secao3';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    parceiros: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao4 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao4s';
+  info: {
+    displayName: 'secao4';
+    description: '';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    texto: Attribute.Blocks & Attribute.Required;
+    subtitulo: Attribute.String & Attribute.Required;
+    imagem: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao5 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao5s';
+  info: {
+    displayName: 'secao5';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    faq: Attribute.Component<'saquefgts-lp.faq-item', true> &
+      Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao6 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao6s';
+  info: {
+    displayName: 'secao6';
+  };
+  attributes: {
+    titulo: Attribute.String & Attribute.Required;
+    texto: Attribute.Blocks & Attribute.Required;
+    imagem: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface SaquefgtsLpSecao7 extends Schema.Component {
+  collectionName: 'components_saquefgts_lp_secao7s';
+  info: {
+    displayName: 'secao7';
+  };
+  attributes: {
+    avaliacoes: Attribute.Component<'saquefgts-lp.avaliacao', true> &
+      Attribute.Required;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -165,6 +296,17 @@ declare module '@strapi/types' {
       'home-page.secao5': HomePageSecao5;
       'home-page.secao6': HomePageSecao6;
       'page.card-com-imagem': PageCardComImagem;
+      'saquefgts-lp.avaliacao': SaquefgtsLpAvaliacao;
+      'saquefgts-lp.faq-item': SaquefgtsLpFaqItem;
+      'saquefgts-lp.header': SaquefgtsLpHeader;
+      'saquefgts-lp.secao1': SaquefgtsLpSecao1;
+      'saquefgts-lp.secao2-card': SaquefgtsLpSecao2Card;
+      'saquefgts-lp.secao2': SaquefgtsLpSecao2;
+      'saquefgts-lp.secao3': SaquefgtsLpSecao3;
+      'saquefgts-lp.secao4': SaquefgtsLpSecao4;
+      'saquefgts-lp.secao5': SaquefgtsLpSecao5;
+      'saquefgts-lp.secao6': SaquefgtsLpSecao6;
+      'saquefgts-lp.secao7': SaquefgtsLpSecao7;
     }
   }
 }
